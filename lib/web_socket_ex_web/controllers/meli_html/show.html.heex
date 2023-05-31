@@ -1,0 +1,19 @@
+<.header>
+  Meli <%= @meli.id %>
+  <:subtitle>This is a meli record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/melis/#{@meli}/edit"}>
+      <.button>Edit meli</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Channel"><%= @meli.channel %></:item>
+  <:item title="Event"><%= @meli.event %></:item>
+  <:item title="Send message"><%= @meli.send_message %></:item>
+</.list>
+
+
+
+<.back navigate={~p"/melis"}>Back to melis</.back>

@@ -1,0 +1,69 @@
+<.header>
+  Listing Meli
+  <:actions>
+    <.link href={~p"/melis/new"}>
+      <.button>New Meli</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vertical Columns Layout with Text Boxes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h2>Channel</h2>
+        <div>
+          <label for="channel_input1"></label>
+          <input type="text" id="channel_input1" name="channel_input">
+        </div>
+        <div>
+          <label for="event_input1"></label>
+          <input type="text" id="event_input1" name="event_input">
+        </div>
+        <button id="add_button1">Add</button>
+        <button id="edit_button1">Edit</button>
+        <button id="delete_button1">Delete</button>
+      </div>
+      <div class="column">
+        <h2>Event</h2>
+        <div>
+          <label for="channel_input2"></label>
+          <input type="text" id="channel_input2" name="channel_input">
+        </div>
+        <div>
+          <label for="event_input2"></label>
+          <input type="text" id="event_input2" name="event_input">
+        </div>
+        <button id="add_button2">Add</button>
+        <button id="edit_button2">Edit</button>
+        <button id="delete_button2">Delete</button>
+      </div>
+      <div class="column">
+        <h2>Message</h2>
+        <div>
+          <label for="channel_input3"></label>
+          <input type="text" id="channel_input3" name="channel_input">
+        </div>
+        <div>
+          <label for="event_input3"></label>
+          <input type="text" id="event_input3" name="event_input">
+        </div>
+        <button id="add_button3">Add</button>
+        <button id="edit_button3">Edit</button>
+        <button id="delete_button3">Delete</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
